@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap');
+
+
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../fuentes/helvetica_light_oblique.ttf') format('truetype');
+    /* Puedes ajustar la ruta y el formato según la ubicación de tu archivo de fuente */
+}
+
+
+.contenedorNav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(191, 189, 189);
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-brand img {
+    display: block;
+    margin: 0 auto;
+}
+
+.PadreSelectorPrendas {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-inline: 8px;
+}
+
+.link,
+.contctoLink {
+    font-family: 'MiFuente', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+.centrar {
+    width: 30%;
+}
+
+.contenedorSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10px;
+    box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.5);
+}
+
+.linksNav {
+    margin-right: -8px;
+}
+
+.lupa {
+    margin-left: 20px;
+}
+
+
+
+.link.active {
+
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgba(16, 6, 1, 0.803);
+    text-underline-offset: 3px;
+
+}
+
+.link {
+
+    color: black;
+
+}
+
+.link:hover {
+
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgba(0, 0, 0, 0.851);
+    text-underline-offset: 3px;
+
+}
+
+
+.link.active:hover {
+
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgba(9, 3, 0, 0.87);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+
+}
+
+
+.scrollUp {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}

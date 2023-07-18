@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "img": "https://cdn.shopify.com/s/files/1/0070/7805/1903/files/253019_400x.jpg?v=1686262843",
+        "precio": 500,
+        "categoria": "buzo"
+    },
+    {
+        "id": 2,
+        "img": "https://cdn.shopify.com/s/files/1/0070/7805/1903/files/21955_400x.jpg?v=1686263174",
+        "precio": 1500,
+        "categoria": "remera"
+    },
+    {
+        "id": 3,
+        "img": "https://cdn.shopify.com/s/files/1/0070/7805/1903/files/21951_400x.jpg?v=1686273027",
+        "precio": 5300,
+        "categoria": "buzo"
+    },
+    {
+        "id": 4,
+        "img": "https://shop.bronze56k.com/cdn/shop/files/21911_400x.jpg?v=1686269381",
+        "precio": 400,
+        "categoria": "remera"
+    },
+    {
+        "id": 5,
+        "img": "https://shop.bronze56k.com/cdn/shop/files/21933_400x.jpg?v=1686270686",
+        "precio": 1700,
+        "categoria": "remera"
+    },
+    {
+        "id": 6,
+        "img": "https://shop.bronze56k.com/cdn/shop/products/6422_400x.jpg?v=1639670078",
+        "precio": 1300,
+        "categoria": "pantalon"
+    },
+    {
+        "id": 7,
+        "img": "https://shop.bronze56k.com/cdn/shop/products/6419_400x.jpg?v=1639670048",
+        "precio": 1400,
+        "categoria": "pantalon"
+    },
+    {
+        "id": 8,
+        "img": "https://shop.bronze56k.com/cdn/shop/products/6453_400x.jpg?v=1639670354",
+        "precio": 1900,
+        "categoria": "buzo"
+    },
+    {
+        "id": 9,
+        "img": "https://shop.bronze56k.com/cdn/shop/products/6410_400x.jpg?v=1639669919",
+        "precio": 1400,
+        "categoria": "pantalon"
+    }
+]

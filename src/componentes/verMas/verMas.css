@@ -1,0 +1,144 @@
+/* Estilos del contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos de la imagen "Ver Más" */
+.imagenVerMas {
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+}
+
+/* Estilos del contenedor derecho */
+.contenedorDerecha {
+    font-family: 'MiFuente', sans-serif;
+    margin-left: 60px;
+}
+
+/* Estilos del título h3 dentro del contenedor derecho */
+.contenedorDerecha h3 {
+    font-weight: bold;
+}
+
+/* Estilos del contenedor de cantidad */
+.parrafoCantidad {
+    text-align: start !important;
+    color: rgba(0, 0, 0, 0.552);
+    font-size: 13px;
+}
+
+.cantidad {
+    width: 150px;
+    height: 45px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+/* Estilos de los botones "Ver Más" y "Talle" */
+.botonVerMas,
+.botonTalle {
+
+    text-decoration: none;
+    font-family: 'MiFuente', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+    padding: 6px;
+    font-weight: 500;
+
+}
+
+/* Estilos del botón "Ver Más" */
+.botonVerMas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s;
+
+}
+
+/* Estilos del botón "Talle" */
+.botonTalle {
+    font-size: 15px;
+    padding-inline: 15px;
+    margin: 5px;
+    border-radius: 100px;
+}
+
+/* Estilos de hover para los botones "Ver Más" y "Talle" */
+.botonVerMas:hover,
+.botonTalle:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* Estilos del contenedor de talle */
+.contenedorTalle {
+    display: flex;
+}
+
+/* Estilos del botón de sumar y restar */
+.sumarRestar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent;
+    text-align: start !important;
+    color: rgba(0, 0, 0, 0.552);
+    font-size: 20px;
+}
+
+/* Estilos del párrafo de cantidad */
+.parrafoCantidad {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilos del botón "Talle" activo */
+.botonTalle.activo {
+    background-color: black;
+    color: white;
+    /* Puedes agregar este estilo para cambiar el color del texto a blanco */
+}
+
+
+/* boton sumar */
+.contenedorBoton {
+    margin-top: 8px;
+    padding-top: 20px;
+
+
+}
+
+.botonSumar {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 100px;
+    font-weight: 700;
+
+}
+
+p {
+    margin: 0;
+}
+
+.tamanio {
+    margin-top: 16px;
+}
+
+.contenedorCantidad {
+    margin-top: 15px;
+}

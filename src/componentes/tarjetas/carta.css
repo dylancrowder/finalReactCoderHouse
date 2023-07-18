@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../fuentes/helvetica_light_oblique.ttf') format('truetype');
+    /* Puedes ajustar la ruta y el formato según la ubicación de tu archivo de fuente */
+}
+
+
+.tituloCarta {
+
+    text-align: center;
+    font-family: 'MiFuente', sans-serif;
+    font-size:1em !important;
+    font-weight: 600 !important;
+}
+
+.precioCarta {
+    color: rgb(94, 110, 110) !important;
+}
+
+.padreCartas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.contenedorCarta {
+    border: none !important;
+}
+
+
+.contenedorCarta:hover .zoomEfecto {
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}
+
+
+.padreCartas:hover .hoverCarta {
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: rgba(11, 6, 3, 0.72);
+    text-underline-offset: 3px;
+}

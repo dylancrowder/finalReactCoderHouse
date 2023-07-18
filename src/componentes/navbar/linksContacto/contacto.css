@@ -1,0 +1,57 @@
+/* Importar la fuente Roboto desde Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+
+/* Estilos para el formulario */
+form {
+    padding: 10px;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    /* Usar la fuente Roboto */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #adacac;
+    color: #525c66;
+    font-size: 1em;
+    resize: none;
+}
+
+/* Estilos para el botón del formulario */
+form button {
+    margin: 0 auto;
+    display: block;
+    background-color: #000000;
+    padding: 10px 85px;
+    border: 1px solid black;
+    font-size: 1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    /* Usar la fuente Roboto */
+    margin-bottom: 15px;
+}
+
+form button:hover {
+    background-color: #f4f4f4;
+    color: #000000;
+    transition: background-color 0.5s;
+    /* Corregir el tiempo de transición */
+}
+
+/* Estilos adicionales para el textarea */
+textarea {
+    resize: none;
+}
+
+/* Estilos para el título del formulario */
+.tituloContacto {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /* Usar la fuente Roboto */
+    padding: 20px;
+}
