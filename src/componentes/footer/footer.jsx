@@ -1,8 +1,8 @@
 import React from 'react';
-import "./footer.css"
-import youtube from "../imagens/social.png"
-import instagram from "../imagens/social(1).png"
-
+import { Link } from 'react-router-dom';
+import "./footer.css";
+import youtube from "../imagens/social.png";
+import instagram from "../imagens/social(1).png";
 function Footer() {
     return (
         <footer>
@@ -10,15 +10,12 @@ function Footer() {
                 <div className="row1">
                     <img className='logotipo' src={youtube} alt='youtube' />
                     <img className='logotipo' src={instagram} alt='instagram' />
-
-
-
                 </div>
 
                 <div className="row">
                     <ul>
-                        <li><a href="./contacto">Contactanos</a></li>
 
+                        <li><Link to="/contacto">Contactanos</Link></li>
                     </ul>
                 </div>
 

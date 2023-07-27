@@ -1,0 +1,12 @@
+.padreCarrito {
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+
+.columnas {
+
+    display: flex;
+}

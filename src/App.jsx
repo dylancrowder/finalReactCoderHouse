@@ -6,33 +6,32 @@ import Detalles from './componentes/verMas/Detalles';
 import Contacto from './componentes/navbar/linksContacto/ContactoLink';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './componentes/footer/footer';
-import Cardwidget from './componentes/navbar/Cardwidget';
+import Carrito from './componentes/navbar/linksContacto/carrito/Carrito';
+import { CartProvider } from './context/CartContext';
 
 
 function App() {
+
   return (
 
     <div className='mainBody' >
-      <BrowserRouter>
+      <CartProvider>
+        <BrowserRouter>
 
-        <Navbar />
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<ListContainer />} />
+            <Route path='/item/:id' element={<Detalles itemId={0} />} />
+            <Route path='/contacto' element={<Contacto />}></Route>
+            <Route path='/carrito' element={<Carrito />}></Route>
+            <Route path='/producto' element={<ListContainer />} />
+            <Route path='/producto/:categoria' element={<ListContainer />} />
 
-        <Routes>
-
-          <Route path='/' element={<ListContainer />} />
-          <Route path='/item/:id' element={<Detalles itemId={2} />} />
-          <Route path='/contacto' element={<Contacto />}></Route>
-          <Route path='/carrito' element={<Cardwidget />}></Route>
-          <Route path='/producto' element={<ListContainer />} />
-          <Route path='/producto/:categoria' element={<ListContainer />} />
-
-        </Routes>
-
-
-        <Footer></Footer>
-      </BrowserRouter>
-
-    </div>
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </CartProvider>
+    </div >
 
   );
 }

@@ -12,8 +12,9 @@ const Contacto = () => {
     return (
 
         <div>
-            <h1 className="tituloContacto"> Contactanos</h1>
+
             <form className="formulario" onSubmit={handleSubmit(enviar)}>
+                <h1 className="tituloContacto"> Contactanos</h1>
                 <input name="nombre" type="text" placeholder="Nombre" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus {...register("nombre")} />
                 <input name="email" type="email" placeholder="Correo electrónico"  {...register("email")} />
                 <textarea name="consulta" placeholder="¿Cuál es el motivo de tu consulta?" rows="6" {...register("mensaje")}></textarea>

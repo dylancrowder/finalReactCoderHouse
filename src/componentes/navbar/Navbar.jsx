@@ -4,13 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../imagens/logotipo.png';
 import lupa from '../imagens/lupa.png'
-import logoCarrito from '../imagens/bolsa-de-la-compra.png'
+import Cardwidget from "./linksContacto/carrito/Cardwidget"
 import logoContacto from '../imagens/envio-al-mundo-entero(1).png'
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import SelectorPrendas from "./SelectorPrendas/SelectorPrendas"
 
 
 function App() {
+
     return (
 
         <div className="App">
@@ -38,7 +39,7 @@ function App() {
                 </div>
                 <div className='linksNav'>
                     <Link className='contctoLink' to="/contacto"><img width="34" height="34" src={logoContacto} alt="Logo" /></Link>
-                    <Link className='contctoLink' to="/carrito"><img width="34" height="34" src={logoCarrito} alt="Logo" /></Link>
+                    <Cardwidget></Cardwidget>
                 </div>
             </div>
 

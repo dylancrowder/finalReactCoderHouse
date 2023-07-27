@@ -14,6 +14,7 @@ const Contador = ({ cantidad, restar, sumar, sumarCarrito }) => {
                 </button>
             </div>
 
+
             <div className="contenedorBoton">
                 <button className="botonSumar" onClick={sumarCarrito}>Sumar al carro</button>
             </div>
