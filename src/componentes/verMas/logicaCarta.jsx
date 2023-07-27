@@ -34,9 +34,7 @@ export const useCartLogic = (item) => {
             nuevoCarrito.push(itemAgregado);
         }
         setCarrito(nuevoCarrito);
-        console.log(nuevoCarrito);
-
-
+    
     };
 
 
