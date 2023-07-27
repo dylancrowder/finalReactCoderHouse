@@ -26,9 +26,9 @@ const Carrito = ({ item }) => {
                             <h2>{prod.categoria}</h2>
                             <p>${prod.precio}</p>
                             <div>
-                                <button onClick={() => restar(prod.cantidad)}>-</button>
+                                <button onClick={() => restar()}>-</button>
                                 <span>{cantidad}</span>
-                                <button onClick={() => sumar(prod.cantidad)}>+</button>
+                                <button onClick={() => sumar()}>+</button>
                             </div>
                             <button onClick={() => sumarCarrito()}>sumar</button>
                         </div>
