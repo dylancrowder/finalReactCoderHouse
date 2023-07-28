@@ -6,7 +6,23 @@
 
 }
 
+
+.contenedorImgen {
+    display: flex;
+
+}
+
+.carritoImagen {
+    width: 200px;
+    
+}
+.contenedorInformacion{
+    margin-left: 40px;
+}
+
 .columnas {
 
     display: flex;
+
+    gap: 450px;
 }
