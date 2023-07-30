@@ -5,7 +5,7 @@ import "./itemsCarta.css";
 const ItemsCarta = ({ productos, titulo }) => {
   return (
     <div>
-      {/* <h2>{titulo}</h2> */}
+      {/*  <h2>{titulo}</h2>  */}
 
       <div className="contenedor">
         {productos.map((prod) => (

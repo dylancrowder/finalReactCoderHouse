@@ -2,6 +2,34 @@ import "./carrito.css";
 import React, { useContext } from "react";
 import { CartContext } from "../../../../context/CartContext";
 
+const CarritoItem = ({ prod, onIncrement, onDecrement }) => {
+    return (
+        <div className="padreCarrito" key={prod.id}>
+            <div className="columnas">
+                <div className="contenedorImgen">
+                    <img className="carritoImagen" src={prod.img} alt={prod.categoria} />
+                    <div className="contenedorInformacion">
+                        <h2>{prod.categoria}</h2>
+                        <p>${prod.precio}</p>
+                    </div>
+                </div>
+                <div className="cantidad">
+                    <button className="sumarRestar" onClick={() => onDecrement(prod.id)}>
+                        -
+                    </button>
+                    <p className="parrafoCantidad">{prod.cantidad}</p>
+                    <button className="sumarRestar" onClick={() => onIncrement(prod.id)}>
+                        +
+                    </button>
+                </div>
+                <div className="totalColumna">
+                    <p>total: ${prod.precio * prod.cantidad}</p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const Carrito = () => {
     const { carrito, carritoTotal, setCarrito } = useContext(CartContext);
 
@@ -27,38 +55,25 @@ const Carrito = () => {
     };
 
     return (
-        <div>
-            <h1>Tu carro</h1>
+        <div className="padreTotal">
+            <h1 className="tituloCarro">Tu carro</h1>
 
             {carrito.map((prod) => (
-                <div className="padreCarrito" key={prod.id}>
-                    {console.log(prod.precio)}
-                    <div className="columnas">
-                        <div className="contenedorImgen">
-                            <img className="carritoImagen" src={prod.img} alt={prod.categoria} />
-                            <div className="contenedorInformacion">
-                                <h2>{prod.categoria}</h2>
-                                <p>${prod.precio}</p>
-                            </div>
-                        </div>
-
-                        <div className="cantidad">
-                            <button className="sumarRestar" onClick={() => modificarCantidad(prod.id, -1)}>
-                                -
-                            </button>
-                            <p className="parrafoCantidad">{prod.cantidad}</p>
-                            <button className="sumarRestar" onClick={() => modificarCantidad(prod.id, 1)}>
-                                +
-                            </button>
-                        </div>
-                        <div>
-                            <p>total</p>
-                        </div>
-                    </div>
-                </div>
+                <CarritoItem
+                    key={prod.id}
+                    prod={prod}
+                    onIncrement={(prodId) => modificarCantidad(prodId, 1)}
+                    onDecrement={(prodId) => modificarCantidad(prodId, -1)}
+                />
             ))}
-            <h2>precio total: {carritoTotal()}</h2>
-            <button onClick={eliminarCarrito}>Eliminar carrito</button>
+            <div className="borderr">
+                <div className="totalCarrito">
+                    <h2 className="tituloCarrito">precio total: ${carritoTotal()}</h2>
+                    <button className="botonCarritoCompras" onClick={eliminarCarrito}>
+                        Eliminar carrito
+                    </button>
+                </div>
+            </div>
         </div>
     );
 };
