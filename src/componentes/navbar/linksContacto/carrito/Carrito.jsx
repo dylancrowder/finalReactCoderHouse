@@ -1,6 +1,7 @@
 import "./carrito.css";
 import React, { useContext } from "react";
 import { CartContext } from "../../../../context/CartContext";
+import { Link } from "react-router-dom";
 
 const CarritoItem = ({ prod, onIncrement, onDecrement }) => {
     return (
@@ -72,6 +73,7 @@ const Carrito = () => {
                     <button className="botonCarritoCompras" onClick={eliminarCarrito}>
                         Eliminar carrito
                     </button>
+                    <Link to="/checkout"> Finalizar Compra</Link>
                 </div>
             </div>
         </div>
